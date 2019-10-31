@@ -1,5 +1,5 @@
 {
-  "name": "typescript",
+  "name": "ts_project",
   "version": "1.0.0",
   "description": "Typescript explanation.",
   "main": "main.ts",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/josnoc/TypeScript/issues"
   },
-  "homepage": "https://github.com/josnoc/TypeScript#readme"
+  "homepage": "https://github.com/josnoc/TypeScript#readme",
+  "devDependencies": {
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.4"
+  }
 }
