@@ -1,0 +1,19 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "Typescript explanation.",
+  "main": "main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/josnoc/TypeScript.git"
+  },
+  "author": "Josnoc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/josnoc/TypeScript/issues"
+  },
+  "homepage": "https://github.com/josnoc/TypeScript#readme"
+}
