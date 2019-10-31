@@ -4,6 +4,8 @@
   "description": "Typescript explanation.",
   "main": "main.ts",
   "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
