@@ -33,55 +33,55 @@
 //   console.error(e);
 // }
 
-type TClassAnimal<T> = new (name: string, ...rest: any[]) => T;
+// type TClassAnimal<T> = new (name: string, ...rest: any[]) => T;
 
-abstract class Animal {
-  name: string;
-  constructor(name: string) {
-    this.name = name;
-  }
+// abstract class Animal {
+//   name: string;
+//   constructor(name: string) {
+//     this.name = name;
+//   }
 
-  abstract talk(): string;
-}
+//   abstract talk(): string;
+// }
 
-class Lion extends Animal {
-  talk() {
-    return "Roaaarrr!";
-  }
-}
+// class Lion extends Animal {
+//   talk() {
+//     return "Roaaarrr!";
+//   }
+// }
 
-class Cat extends Animal {
-  color: string;
-  constructor(name: string, color: string) {
-    super(name);
-    this.color = color;
-  }
-  talk() {
-    return "meow!";
-  }
+// class Cat extends Animal {
+//   color: string;
+//   constructor(name: string, color: string) {
+//     super(name);
+//     this.color = color;
+//   }
+//   talk() {
+//     return "meow!";
+//   }
 
-  get type() {
-    return (this.constructor as any).name;
-  }
-}
+//   get type() {
+//     return (this.constructor as any).name;
+//   }
+// }
 
-class Dog extends Animal {
-  talk() {
-    return "barf!";
-  }
-}
+// class Dog extends Animal {
+//   talk() {
+//     return "barf!";
+//   }
+// }
 
-function createAnimal<C extends Animal>(
-  constructor: TClassAnimal<C>,
-  name: string,
-  ...rest: any[]
-): C {
-  return new constructor(name, rest);
-}
+// function createAnimal<C extends Animal>(
+//   constructor: TClassAnimal<C>,
+//   name: string,
+//   ...rest: any[]
+// ): C {
+//   return new constructor(name, rest);
+// }
 
-const simba = createAnimal(Lion, "simba");
-const timoteo = createAnimal(Cat, "Timoteo", "orange");
+// const simba = createAnimal(Lion, "simba");
+// const timoteo = createAnimal(Cat, "Timoteo", "orange");
 
-console.log(simba.talk());
-console.log(`${timoteo.name} is a ${timoteo.color} ${timoteo.type}`);
-console.log(timoteo.talk());
+// console.log(simba.talk());
+// console.log(`${timoteo.name} is a ${timoteo.color} ${timoteo.type}`);
+// console.log(timoteo.talk());
