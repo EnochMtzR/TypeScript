@@ -8,16 +8,16 @@ let tuple: [string, number, boolean];
 let ICanBeAnything: any;
 let obj: object;
 
-enum Colors {
-  blue = "#0000FF",
-  red = "#FF0000",
-  green = "#00FF00",
-  yellow = "#FFFF00",
-  cyan = "#00FFFF",
-  purple = "#FF00FF",
-  white = "#FFFFFF",
-  black = "#000000"
-}
+// enum Colors {
+//   blue = "#0000FF",
+//   red = "#FF0000",
+//   green = "#00FF00",
+//   yellow = "#FFFF00",
+//   cyan = "#00FFFF",
+//   purple = "#FF00FF",
+//   white = "#FFFFFF",
+//   black = "#000000"
+// }
 
 str = "Hello";
 num = 11.5;
